@@ -1,0 +1,14 @@
+Run Client side 
+=> cd Client
+=> npm start
+
+Run Server side
+=> cd Server
+=> npm start
+
+
+//Pacakges
+subscriptions-transport-ws => Web Socket
+(Its transfer the messages)
+
+uuid => to fetch user id

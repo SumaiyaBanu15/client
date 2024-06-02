@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import {v4 as uuid} from 'uuid';
+// import Home from "./pages/Home/Home.js";
+// import Chat from './pages/Chat/Chat.js';
+import { BrowserRouter } from "react-router-dom"
+import AppRoutes from "./routes/AppRoutes.js"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//   const [userName, setUserName] = useState("");
+//   const [userId, setUserId] = useState(uuid());
+//   const [startChat, setStartChat] = useState(false);
+
+//   useEffect(() => {
+// if(!startChat){
+//   const data =JSON.parse(sessionStorage.getItem("user"));
+//   if(data){
+//     setUserName(data.userName);
+//     setUserId(data.id);
+//     setStartChat(true);
+//   }
+// }
+// // eslint-disable-next-line 
+//   }, []);
+  
+
+//   if(startChat){
+//     return (<Chat 
+//       userName = {userName}
+//       userId = {userId}/>)
+//   }
+  return<>
+  <BrowserRouter>
+  <AppRoutes />
+  </BrowserRouter>
+  </>
+  
 }
 
-export default App;
+export default App
